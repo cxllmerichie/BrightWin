@@ -2,7 +2,7 @@
  False,
  False,
  False,
- ['C:\\Projects\\Python\\BrightnessControl\\icon-white.ico'],
+ ['C:\\Projects\\Python\\BrightnessControl\\assets\\icon-white.ico'],
  None,
  False,
  False,
@@ -314,7 +314,7 @@
  [],
  False,
  False,
- 1665691180,
+ 1665691559,
  [('runw.exe',
    'C:\\Users\\Richie\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\runw.exe',
    'EXECUTABLE')])
