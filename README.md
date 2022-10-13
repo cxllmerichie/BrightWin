@@ -1,5 +1,5 @@
 # BrightnessControl
-## Simple app to control the brightness of 2 primary and secondary displays
-## App supposed to be used when at least 2 displays are connected to the executable machine
+- control the brightness of primary and secondary displays
+- supposed to work only when at least 2 displays are connected
 
 # Executale placed in the /dist folder
