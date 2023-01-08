@@ -1,8 +1,6 @@
 # BrightnessControl
-## Install
-- download "assets" folder and "build/BrightnessControl.exe" file
-- put them into one directory
-- create a shortcut for convenient usage
+## Installation
+- Release of a certain version might be found in the "Releases/" folder
 ## Usage
 - works from tray
 - Ctrl+Q to close the app (from tray)
