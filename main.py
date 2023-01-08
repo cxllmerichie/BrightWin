@@ -1,12 +1,13 @@
 from PyQt5.QtWidgets import QApplication
 import sys
 
-from src import Application
+from src import Application, style
 
 
 def main():
     qapp = QApplication(sys.argv)
-    # qapp.setStyle('Windows')
+    qapp.setStyle('Windows')
+    qapp.setStyleSheet(style)
     app = Application()
     sys.exit(qapp.exec_())
 
