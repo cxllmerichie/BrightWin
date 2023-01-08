@@ -1,1 +1,0 @@
-start cmd /k "pyinstaller --onefile --windowed --icon=assets/icon-white.ico BrightnessControl.py"
