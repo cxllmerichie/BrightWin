@@ -5,6 +5,7 @@ SET RELEASE=%RELEASES%\%NAME%
 
 mkdir %RELEASE%
 copy %ROOT%\build\BrightnessControl.exe %RELEASE%\BrightnessControl.exe
+copy %ROOT%\build\startup.sh %RELEASE%\startup.sh
 Xcopy %ROOT%\assets %RELEASE%\assets /E /H /C /I
 #7z a -tzip %NAME%.zip C:\Projects\Python\BrightnessControl-Desktop-\Releases\%NAME%
 rmdir /s /q %RELEASE%

@@ -1,0 +1,1 @@
+Shortcut.exe /f:"%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\BrightnessControl.lnk" /a:c /t:BrightnessControl.exe
