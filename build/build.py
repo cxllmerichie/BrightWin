@@ -1,8 +1,9 @@
 from subprocess import PIPE, Popen
-from os import getcwd, path, pardir
+from os import getcwd, path, pardir, remove as rmfile, walk
 from shutil import rmtree as rmdir
-from os import remove as rmfile
 from zipfile import ZipFile
+from os.path import basename
+
 
 if __name__ == '__main__':
     VERSION = '2.1'
@@ -21,9 +22,11 @@ if __name__ == '__main__':
     rmdir(f'{BUILD}\\{NAME}')
     rmfile(f'{BUILD}\\{NAME}.spec')
 
-    release = ZipFile(f'{ROOT}\\Releases\\{NAME}-v{VERSION}.zip', 'w')
-    release.write(f'{NAME}.exe')
-    release.write(f'{ROOT}\\assets')
-    release.close()
+    release = f'{ROOT}\\Releases\\{NAME}-v{VERSION}.zip'
+    with ZipFile(release, 'w') as zip_release:
+        zip_release.write(f'{NAME}.exe')
+        for dirpath, dirnames, filenames in walk(f'{ROOT}\\assets'):
+            for filename in filenames:
+                zip_release.write(path.join(dirpath, filename), f'assets/{filename}')
 
     rmfile(f'{BUILD}\\{NAME}.exe')
