@@ -13,10 +13,16 @@ style = f'''
     min-width: 200px;
 }}
 
-#Label {{
+#Button {{
+    background-color: transparent;
+    border: none;
     min-width: 50px;
     color: white;
     font-size: 20px;
+}}
+
+#Button:hover {{
+    font-size: 24px;
 }}
 
 '''
