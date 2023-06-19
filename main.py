@@ -1,15 +1,20 @@
-from PyQt5.QtWidgets import QApplication
+from PySide6.QtWidgets import QApplication, QStyleFactory
 import sys
 
-from src import Application, style
+from src.app import Tray
+from src.style import style
 
 
 def main():
     qapp = QApplication(sys.argv)
-    qapp.setStyle('Windows')
+    qapp.setStyle(QStyleFactory.keys()[2])
     qapp.setStyleSheet(style)
-    app = Application()
-    sys.exit(qapp.exec_())
+    qapp.setQuitOnLastWindowClosed(False)
+
+    app = Tray()
+    app.show()
+
+    sys.exit(qapp.exec())
 
 
 if __name__ == '__main__':

@@ -1,2 +1,2 @@
 from .style import style
-from .application import Application
+from .app import Tray
