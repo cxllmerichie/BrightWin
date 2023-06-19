@@ -1,6 +1,6 @@
 # BrightnessControl
 ## Overview
-![plot](./snapshots/v2.0.0.png)
+![plot](./Releases/snapshots/v2.0.0.png)
 ## Installation
 - Download "BrightnessControl-vx.x.zip" from "Releases/" folder
 - Download "BrightnessControl-vx.x.zip" from "Tags/Releases" section
