@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import (
     QSystemTrayIcon, QMenu, QSlider, QVBoxLayout, QHBoxLayout, QPushButton, QFrame, QApplication
 )
-from PySide6.QtGui import QIcon, QAction, QEnterEvent
+from PySide6.QtGui import QIcon, QAction
 from PySide6.QtCore import Qt, QSize, Slot
 from pynput.mouse import Listener
 import webbrowser
